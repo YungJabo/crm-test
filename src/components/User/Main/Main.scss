@@ -1,0 +1,22 @@
+.user{
+    &__fields{
+        display: flex;
+        flex-direction: column;
+        width: 300px;
+        gap: 30px;
+    }
+    &__field{
+        display: grid;
+        grid-template-columns: 1.8fr 2.4fr;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 16px;
+        &__key{
+           color: #65666b;
+        }
+        &__value{
+            margin-left: 20px;
+        }
+        
+    }
+}

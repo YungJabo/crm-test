@@ -1,0 +1,52 @@
+.user{
+    &__img{
+        width: 250px;
+        height: 250px;
+        object-fit: cover;
+    }
+    &__about{
+        display: flex;flex-direction: column;
+    }
+    &__contacts{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        text-align: left;
+        padding: 10px;
+        gap: 10px;
+        &__link{
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            overflow: visible;
+            transition: .5s cubic-bezier(0.075, 0.82, 0.165, 1);
+            box-sizing:border-box;
+            width: fit-content;
+            height: fit-content;
+            &:hover{
+                transform: scale(1.05);
+                svg{
+                    fill: #5932EA;
+                    stroke: #5932EA;
+                    color: #5932EA;
+                    
+                    
+                }
+            }
+        }
+        &__icon-links{
+            margin-top: 10px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        &__icon{
+            transition: .5s cubic-bezier(0.075, 0.82, 0.165, 1);
+            width: 26px;
+            height: 26px;
+            fill: black;
+                    stroke: black;
+                    color: black;
+        }
+    }
+}

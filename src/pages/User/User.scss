@@ -1,0 +1,66 @@
+.user{
+    width: 990px;
+    height: 670px;
+    overflow-y: hidden;
+    // padding: 24px 30px 34px 44px;
+    
+    &__menu{
+        display: flex;
+        
+        
+        &__item{
+            background: #636e80;
+            transition: .7s cubic-bezier(0.075, 0.82, 0.165, 1);
+            &.active{
+                background: white;
+                button{
+                    color: #636e80;
+                }
+            }
+            &:nth-child(1){
+                border-radius: 30px 0 0 0 ;
+            }
+            
+        }
+     &__button{
+        transition: .7s cubic-bezier(0.075, 0.82, 0.165, 1);
+        width: 100%;
+        height: 100%;
+        padding: 10px 10px;
+        color: white;
+        font-weight: 600;
+        font-size: 15px;
+            
+     }   
+    }
+    &__content{
+        // padding: 24px 30px 34px 44px;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        border-radius: 0 0 30px 30px;
+        overflow: hidden;
+        max-height: 100%;
+        
+        
+        
+    }
+    &__title{
+        margin-bottom: 20px;
+    }
+    &__details{
+        
+       
+        background: white;
+       max-height: 100%;
+        padding: 24px 30px 0px 44px;
+        border-radius: 0 30px 0 0;
+        display: flex;
+        justify-content: space-between;
+        flex-grow: 1;
+        overflow: hidden;
+        position: relative;
+    }
+    
+    
+}

@@ -1,0 +1,49 @@
+.dashboard{
+    &__statistics{
+        height: 150px;
+        display: flex;
+        align-items: center;
+        gap: 30px;
+        background: white;
+        border-radius: 30px;
+        padding: 32px 50px;
+        &__icon{
+            width: 42px;
+            height: 42px;
+            fill: transparent;
+            color: #00AC4F;
+
+        }
+        &__info{
+            display: flex;
+            flex-direction: column;
+        }
+        &__active-block{
+            display: flex;
+            align-items: center;
+        }
+        &__active-icon{
+            width: 20px;
+            height: 20px;
+            fill: transparent;
+            color: #00AC4F;
+            margin-right: 4px;
+        }
+        &__title{
+            margin-bottom: 4px;
+            font-size: 14px;
+            color: #ACACAC;
+        }
+        &__count{
+            font-size: 32px;
+            font-weight: 700;
+            color: #333333;
+            margin-bottom: 8px;
+        }
+        &__percent{
+            margin-right: 5px;
+            color: #00AC4F;
+            font-weight: 600;
+        }
+    }
+}

@@ -1,0 +1,31 @@
+.paginator{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    &__button{
+        width: 26px;
+        height: 26px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border:1px solid #EEEEEE;
+        border-radius: 4px;
+        background: #F5F5F5;
+        color:#404B52;
+        transition: 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+        &.active{
+            color: white;
+            background: #5932EA;
+            border:1px solid #5932EA;
+        }
+        &--left{
+            .paginator__button__img{
+                transform: scaleX(-100%)
+            }
+        }
+        &__img{
+            width: 12px;
+            height: 12px;
+        }
+    }
+}
